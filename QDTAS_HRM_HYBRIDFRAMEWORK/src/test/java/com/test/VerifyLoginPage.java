@@ -19,7 +19,7 @@ public class VerifyLoginPage extends BaseClass{
 
 
 	@Test (priority=0)
-	public void VerifyLoginPage()throws IOException{    
+	public void VerifyLoginPage()throws IOException{   
 		
 		
 		HomePage_LoginPage hp_lp = new HomePage_LoginPage(driver);
@@ -28,7 +28,7 @@ public class VerifyLoginPage extends BaseClass{
 		edp.getdata();
 		
 		String user = edp.getStringData ("Sheet1",0,1);  
-		System.out.println("User Name: "+user);
+		//System.out.println("User Name: "+user);
 		                      //("Sheet1",0,0);        ("Sheet1",0,1;)
 		hp.userName(user);
 		String pass = edp.getStringData ("Sheet1",1,1);
